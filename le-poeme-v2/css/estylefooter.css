@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap');
+
+/* Colores logo
+aqua: #00d58d
+naranja: #ff8300
+Color de fondo: #f5eef8 */
+
+/*Empezamos trabajando con los estilos adaptados a versión movil*/
+
+/*Para trabajar con cajas*/
+* { 
+    box-sizing: border-box;
+}
+
+/* estilos de las fuentes dentro del body*/
+body {
+    background-color:  #f5eef8;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    
+}
+
+
+
+/* / / / E S T I L O S   B A S E / / /*/
+
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oxygfont-family: 'Open Sans', sans-serif;en', sans-serif;
+    margin: 0;
+}
+
+ 
+.container{ /*Limitar el contenido de la pagina*/
+width: 100%;
+margin: auto;
+}
+
+.container--flex{ /*Manejar propiedades de flexbox*/
+display: flex;
+flex-wrap: wrap;/* Para bajar los elementos demasiado grandes o que no quepan*/
+justify-content: space-between;/*Para alinear en el eje horizontal*/
+align-items: center;/*alinear en el eje vertical*/
+}
+
+.column {
+    width: 100%;
+}
+
+
+
+/* / / / E S T I L O S  M A I N / / /*/
+
+
+
+.column__title{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.column__txt{
+    font-size: 1.0em;
+    text-align: center;
+}
+
+
+
+
+
+/* imagenes de ofertas de hoy*/
+.ofertas-de-hoy__img{
+    margin: auto;
+    max-width: 350px;
+}
+
+/*titulo del nombre de la flor en ofertas de hoy */
+.ofertas-de-hoy__title{
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* precio de las flores en ofertas de hoy*/
+.ofertas-de-hoy__price {
+    font-size: 1.4em;
+    color: #ff8300;
+    font-weight: bold;
+}
+
+
+/* E S T I L O S  F O O T E R */
+
+
+/*edicion del pie de pagina*/
+.main-footer{
+    background: #222222;
+    color: white;
+    padding: 15px;
+    font-size: 0.6em;
+
+}
+
+
+/* Texto derechos reservados*/
+.copy{
+    text-align: center;
+    margin: auto; 
+    margin-top: 10px;
+}
+
+/*iconos de redes sociales del footer*/
+.main-footer [class*="icon-"]{
+    color:white;
+    text-decoration: none;
+
+
+}
+
+/* acomodo de los iconos de redes sociles del footer*/
+.main-footer [class*="icon-"]:before{
+position: relative;
+top: 2px;
+right: 5px;
+
+}
+
+/* / / / E S T I L O S  R E S P O N S I V E / / /*/
+
+/*Trabajar con una medida de 480px (Movil) */
+
+@media screen and (min-width:480px){
+
+ 
+/*Separar el margenes entre el main y footer*/
+.main {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+.column--33{
+    width: 31%;
+}
+
+
+}
+
+
+/*Alinear los textos del footer*/
+.main-footer .container--flex{
+    align-items: flex-start;
+}
+
+/*Trabajar con una medida de 768px  */
+@media screen and (min-width:768px){
+
+  
+
+
+}
+
+/*Trabajar con una medida de 1024px Escritorio */
+@media screen and (min-width:1024px){
+
+
+
+/*Cambiar el espaciado del footer*/
+.main-footer{
+    padding: 25px;
+}
+
+}
+
